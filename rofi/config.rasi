@@ -1,19 +1,18 @@
 * {
-    font: "Figtree 13";
-    g-spacing: 10px;
+    font: "JetBrainsMono Nerd Font";
+    g-spacing: 20px;
     g-margin: 0;
-    b-color: #000000FF;
-    fg-color: #FFFFFFFF;
-    fgp-color: #888888FF;
-    b-radius: 8px;
+    b-radius: 5px;
     g-padding: 8px;
-    hl-color: #FFFFFFFF;
-    hlt-color: #000000FF;
-    alt-color: #111111FF;
-    wbg-color: #000000CC;
     w-border: 1px solid;
     w-border-color: #FF7833;
     w-padding: 12px;
+    b-color: #000000FF;
+    white: #FFFFFFFF;
+    gray: #888888FF;
+    hl-color: #FF7833;
+    white: #FFFFFFFF;
+    wbg-color: #101010;
 }
 
 configuration {
@@ -27,7 +26,7 @@ listview {
     lines: 7;
     fixed-height: true;
     fixed-columns: true;
-    cycle: false;
+    cycle: true;
     scrollbar: false;
     border: 0px solid;
 }
@@ -43,18 +42,23 @@ window {
 }
 
 prompt {
-    text-color: @fg-color;
+    padding-right: @w-padding;
+    text-color: @white;
 }
 
 inputbar {
     children: ["prompt", "entry"];
     spacing: @g-spacing;
+    border: 1px solid;
+    border-color: #FF7833;
+    border-radius: @b-radius;
+    padding: @w-padding;
 }
 
 entry {
     placeholder: "Search Apps";
-    text-color: @fg-color;
-    placeholder-color: @fgp-color;
+    text-color: @white;
+    placeholder-color: @gray;
 }
 
 mainbox {
@@ -72,27 +76,27 @@ element {
     border-radius: @b-radius;
     border-color: @b-color;
     background-color: transparent;
-    text-color: @fg-color;
+    text-color: @white;
 }
 
 element normal.normal {
-	background-color: transparent;
-	text-color: @fg-color;
+    background-color: transparent;
+    text-color: @white;
 }
 
 element alternate.normal {
-	background-color: @alt-color;
-	text-color: @fg-color;
+    background-color: transparent;
+    text-color: @white;
 }
 
 element selected.active {
-	background-color: @hl-color;
-	text-color: @hlt-color;
+    background-color: @hl-color;
+    text-color: @white;
 }
 
 element selected.normal {
-	background-color: @hl-color;
-	text-color: @hlt-color;
+    background-color: @hl-color;
+    text-color: @white;
 }
 
 message {
