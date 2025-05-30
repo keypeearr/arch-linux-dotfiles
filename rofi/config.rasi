@@ -1,5 +1,5 @@
 * {
-    font: "JetBrainsMono Nerd Font";
+    font: "JetBrainsMono 12";
     g-spacing: 20px;
     g-margin: 0;
     b-radius: 5px;
