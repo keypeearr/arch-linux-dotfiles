@@ -21,7 +21,7 @@
     "format": "{name}: {icon}",
     "format-icons": {
         "active": "",
-		"default": ""
+        "default": ""
     }
   },
   "hyprland/window": {
@@ -37,21 +37,21 @@
     "interval": 1
   },
   "pulseaudio": {
-    "format": "{icon} {volume}%",
-    "format-muted": "",
+    "format": "{icon}  {volume}%",
+    "format-muted": "[::::MUTED::::] ",
     "format-icons": [
       // "default": ["", "", " "]
-      "[::::::::::]",
-      "[I:::::::::]",
-      "[II::::::::]",
-      "[III:::::::]",
-      "[IIII::::::]",
-      "[IIIII:::::]",
-      "[IIIIII::::]",
-      "[IIIIIII:::]",
-      "[IIIIIIII::]",
-      "[IIIIIIIII:]",
-      "[IIIIIIIIII]",
+      "[::::::::::] ",
+      "[I:::::::::] ",
+      "[II::::::::] ",
+      "[III:::::::] ",
+      "[IIII::::::] ",
+      "[IIIII:::::] ",
+      "[IIIIII::::] ",
+      "[IIIIIII:::] ",
+      "[IIIIIIII::] ",
+      "[IIIIIIIII:] ",
+      "[IIIIIIIIII] "
     ],
     "on-click": "pavucontrol"
   },
@@ -59,18 +59,17 @@
     "device": "intel_backlight",
     "format": "{icon} {percent}%",
     "format-icons": [
-      // "🌑", "🌒", "🌓", "🌔", "🌕"
-      "[::::::::::]",
-      "[I:::::::::]",
-      "[II::::::::]",
-      "[III:::::::]",
-      "[IIII::::::]",
-      "[IIIII:::::]",
-      "[IIIIII::::]",
-      "[IIIIIII:::]",
-      "[IIIIIIII::]",
-      "[IIIIIIIII:]",
-      "[IIIIIIIIII]",
+      "[::::::::::] 🌑",
+      "[I:::::::::] 🌑",
+      "[II::::::::] 🌒",
+      "[III:::::::] 🌒",
+      "[IIII::::::] 🌒",
+      "[IIIII:::::] 🌓",
+      "[IIIIII::::] 🌓",
+      "[IIIIIII:::] 🌔",
+      "[IIIIIIII::] 🌔",
+      "[IIIIIIIII:] 🌕",
+      "[IIIIIIIIII] 🌕",
     ]
   },
   "backlight/slider": {
