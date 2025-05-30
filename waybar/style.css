@@ -1,6 +1,6 @@
 * {
   font-family: JetbrainsMono Nerd Font;
-  font-size: 15px;
+  font-size: 14px;
   padding: 0 2px;
 }
 
@@ -78,28 +78,4 @@
   color: #e78284;
   border-radius: 0 5px 5px 0;
   margin-right: 0.5rem;
-}
-
-
-#backlight-slider slider {
-  min-height: 0px;
-  min-width: 0px;
-  opacity: 0;
-  background-image: none;
-  border: none;
-  box-shadow: none;
-}
-
-#backlight-slider trough {
-  min-height: 0px;
-  min-width: 100px;
-  border-radius: 5px;
-  background-color: #1e1e1e;
-}
-
-#backlight-slider highlight {
-  min-width: 0px;
-  min-height: 10px;
-  border-radius: 5px;
-  background-color: #e5c890;
 }
