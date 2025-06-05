@@ -1,0 +1,18 @@
+# Directories to ignore
+dconf/*
+evolution/*
+go/*
+gtk-3.0/*
+kde.org/*
+kitty/*
+nvim/*
+pulse/*
+systemd/*
+tlpui/*
+yay/*
+
+# Files to ignore
+dolphinrc
+pavucontrol.ini
+user-dirs.dirs
+user-dirs.locale
