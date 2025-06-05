@@ -1,0 +1,117 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "backlight",
+    "cpu",
+    "memory",
+    "network",
+    "battery",
+    "custom/power"
+  ],
+  "hyprland/workspaces": {
+    "format": "{name}: {icon}",
+    "format-icons": {
+        "active": "",
+        "default": ""
+    }
+  },
+  "hyprland/window": {
+    "separate-outputs": true,
+    "format": "{initialTitle}",
+    "icon": true,
+    "icon-size": 18
+  },
+  "clock": {
+    "timezone": "Asia/Manila",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%d/%m/%Y - %H:%M:%S}",
+    "interval": 1
+  },
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-muted": "[░░░░░░░░░░] ",
+    "format-icons": [
+      // "default": ["", "", " "]
+      "[░░░░░░░░░░] ",
+      "[█░░░░░░░░░] ",
+      "[██░░░░░░░░] ",
+      "[███░░░░░░░] ",
+      "[████░░░░░░] ",
+      "[█████░░░░░] ",
+      "[██████░░░░] ",
+      "[███████░░░] ",
+      "[████████░░] ",
+      "[█████████░] ",
+      "[██████████] "
+    ],
+    "on-click": "pavucontrol"
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "format-icons": [
+
+      "[░░░░░░░░░░] 🌑",
+      "[█░░░░░░░░░] 🌑",
+      "[██░░░░░░░░] 🌒",
+      "[███░░░░░░░] 🌒",
+      "[████░░░░░░] 🌒",
+      "[█████░░░░░] 🌓",
+      "[██████░░░░] 🌓",
+      "[███████░░░] 🌔",
+      "[████████░░] 🌔",
+      "[█████████░] 🌕",
+      "[██████████] 🌕",
+    ]
+  },
+  "backlight/slider": {
+    "min": 10,
+    "max": 100,
+    "orientation": "horizontal",
+    "device": "intel_backlight"
+  },
+  "cpu": {
+    "interval": 1,
+    "format": "  {icon0}{icon1}{icon2}{icon3} {usage:>2}%",
+    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    "on-click": "wezterm start vtop",
+  },
+  "memory": {
+    "interval": 30,
+    "format": "  {used:0.1f}G/{total:0.1f}G",
+    "on-click": "wezterm start vtop",
+  },
+  "network": {
+    "format-wifi": "󰤢 {bandwidthDownBits}",
+    "format-ethernet": "󰈀 {bandwidthDownBits}",
+    "format-disconnected": "󰤠 No Network",
+    "interval": 5,
+    "tooltip": false,
+  },
+  "battery": {
+    "bat": "BAT1",
+    "interval": 60,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "max-length": 25,
+    "on-click": "tlpui",
+  },
+  "custom/power": {
+    "tooltip": false,
+    "on-click": "wlogout &",
+    "format": "⏻"
+  }
+}
