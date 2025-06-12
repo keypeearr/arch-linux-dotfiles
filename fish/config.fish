@@ -3,7 +3,7 @@ if status is-interactive
 end
 
 # Path Variables
-fish_add_path ~/go/bin
+fish_add_path $HOME/go/bin
 
 # Remove fish greeting
 set fish_greeting ""
