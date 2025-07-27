@@ -4,12 +4,13 @@ end
 
 # Path Variables
 fish_add_path $HOME/go/bin
+fish_add_path $HOME/.local/share/nvim/mason/bin
 
 # Remove fish greeting
 set fish_greeting ""
 
 # Start Neofetch
-neofetch
+fastfetch
 
 # Start Oh My Posh
 oh-my-posh init fish --config "~/.config/oh-my-posh/config.json" | source
