@@ -31,6 +31,10 @@
   background: #1e1e1e;
 }
 
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
 #tray,
 #backlight,
 #clock,
@@ -43,7 +47,7 @@
 #custom-lock,
 #custom-power {
   background: #101010;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.75rem;
   margin: 5px 0 0 0;
 }
 
