@@ -1,85 +1,169 @@
 * {
     font-family: JetbrainsMono Nerd Font;
     font-size: 14px;
-    padding: 0 2px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 
 #waybar {
     background: transparent;
-    color: #c6d0f5;
-    margin: 2px;
+    color: rgb(255, 120, 51);
+    margin: 8px;
+    border-radius: 12px;
+    padding: 4px;
 }
 
-#workspaces,
-#window {
-    background: #101010;
-    border-radius: 5px;
-    margin: 5px 0 0px 5px;
+#workspaces {
+    background: rgba(30, 30, 30, 0.8);
+    border-radius: 8px;
+    margin: 4px 8px;
+    padding: 2px;
 }
 
 #workspaces button {
-    color: #babbf1;
-    border-radius: 5px;
-    padding: 0.4rem;
+    color: rgb(255, 120, 51);
+    background: transparent;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin: 2px;
+    font-weight: 600;
 }
 
 #workspaces button.active {
-    color: #99d1db;
+    color: #ffffff;
+    background: rgb(255, 120, 51);
 }
 
 #workspaces button:hover {
-    background: #1e1e1e;
+    color: #ffffff;
+    background: rgba(255, 120, 51, 0.5);
 }
 
-window#waybar.empty #window {
-    background-color: transparent;
+#window {
+    background: rgba(30, 30, 30, 0.8);
+    border-radius: 8px;
+    margin: 4px 8px;
+    padding: 8px 16px;
+    color: rgb(255, 120, 51);
+    font-weight: 400;
 }
 
-#tray,
-#backlight,
-#clock,
-#battery,
-#pulseaudio,
-#backlight-slider,
-#network,
-#cpu,
-#memory,
-#custom-lock,
-#custom-power {
-    background: #101010;
-    padding: 0.5rem 0.75rem;
-    margin: 5px 0 0 0;
+#clock {
+    background: rgba(30, 30, 30, 0.8);
+    color: rgb(255, 120, 51);
+    padding: 8px 16px;
+    margin: 4px 8px;
+    border-radius: 8px;
+    font-weight: 600;
 }
 
-#clock,
-#custom-weather {
-    color: #8caaee;
-    border-radius: 5px;
+#cpu {
+    background: rgba(30, 30, 30, 0.8);
+    color: rgb(255, 120, 51);
+    padding: 8px 12px;
+    margin: 4px 0px;
 }
 
-#custom-weather {
-    margin-left: 0.5rem;
+#memory {
+    background: rgba(30, 30, 30, 0.8);
+    color: rgb(255, 120, 51);
+    padding: 8px 12px;
+    margin: 4px 0px;
 }
 
-#battery {
-    color: #a6d189;
-}
-
-#battery.warning:not(.charging) {
-    color: #e78284;
-}
-
-#backlight {
-    color: #e5c890;
+#network {
+    background: rgba(30, 30, 30, 0.8);
+    color: rgb(255, 120, 51);
+    padding: 8px 12px;
+    margin: 4px 0px;
 }
 
 #pulseaudio {
-    color: #ea999c;
-    border-radius: 5px 0 0 5px;
+    background: rgba(30, 30, 30, 0.8);
+    color: rgb(255, 120, 51);
+    padding: 8px 12px;
+    margin: 4px 0px 4px 8px;
+    border-radius: 8px 0 0 8px;
+}
+
+#backlight {
+    background: rgba(30, 30, 30, 0.8);
+    color: rgb(255, 120, 51);
+    padding: 8px 12px;
+    margin: 4px 0px;
+}
+
+#battery {
+    background: rgba(30, 30, 30, 0.8);
+    color: rgb(255, 120, 51);
+    padding: 8px 12px;
+    margin: 4px 0px;
+    font-weight: 600;
 }
 
 #custom-power {
-    color: #e78284;
-    border-radius: 0 5px 5px 0;
-    margin-right: 0.5rem;
+    background: rgba(30, 30, 30, 0.8);
+    color: rgb(255, 120, 51);
+    padding: 8px 12px;
+    margin: 4px 8px 4px 0px;
+    border-radius: 0 8px 8px 0;
+    font-weight: 600;
+}
+
+#window:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#pulseaudio:hover,
+#backlight:hover,
+#battery:hover,
+#custom-power:hover,
+#clock:hover {
+    color: #ffffff;
+    background: rgba(255, 120, 51, 0.3);
+}
+
+#window:active,
+#cpu:active,
+#memory:active,
+#network:active,
+#pulseaudio:active,
+#backlight:active,
+#battery:active,
+#custom-power:active,
+#clock:active {
+    color: #ffffff;
+    background: rgb(255, 120, 51);
+}
+
+#battery.warning:not(.charging) {
+    color: rgb(255, 120, 51);
+    background: rgba(255, 120, 51, 0.2);
+}
+
+#battery.warning:not(.charging):hover {
+    color: #ffffff;
+    background: rgba(255, 120, 51, 0.4);
+}
+
+#battery.critical:not(.charging) {
+    color: #ff0000;
+    background: rgba(30, 30, 30, 0.8);
+}
+
+#battery.critical:not(.charging):hover {
+    color: #ffffff;
+    background: rgba(255, 0, 0, 0.4);
+}
+
+#battery.charging {
+    color: #00ff00;
+    background: rgba(30, 30, 30, 0.8);
+}
+
+#battery.charging:hover {
+    color: #ffffff;
+    background: rgba(0, 255, 0, 0.3);
 }
