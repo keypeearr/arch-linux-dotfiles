@@ -50,6 +50,10 @@
     font-weight: 400;
 }
 
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
 #clock {
     background: rgba(30, 30, 30, 0.8);
     color: rgb(255, 120, 51);
